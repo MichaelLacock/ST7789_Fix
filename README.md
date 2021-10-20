@@ -19,6 +19,7 @@ Additions:
       }
       
 - Addidtion to "Adafruit_ST7789.h":
+
       void rowOffset(uint8_t n1, uint8_t n2, uint8_t n3, uint8_t n4);
       
 How this fix works:
