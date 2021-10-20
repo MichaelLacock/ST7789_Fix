@@ -38,5 +38,6 @@ writen by Adafruit Industries.
 
 Also here's a super easy fix for if you are trying to do the same thing
 but in CircuitPython, just add this when adding the display:
-display = ST7789(display_bus, width=280, height=240, rowstart=(20), rotation=90)
+
+      display = ST7789(display_bus, width=280, height=240, rowstart=(20), rotation=90)
 
