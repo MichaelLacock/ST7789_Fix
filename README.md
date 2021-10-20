@@ -1,7 +1,8 @@
 # ST7789_Fix
 
 This is a fix for screen rotation for the Adafruit EyeSPI 1.69" 280x240 tft
-for the "Adafruit ST7735 and ST7789" Arduino Library.  
+(https://www.adafruit.com/product/5206) for the "Adafruit ST7735 and 
+ST7789" Arduino Library.  
 
 Currect Problem:
 When rotating the screen using "tft.setRotation(3);" the display rowstart is off.
@@ -34,4 +35,8 @@ The _rowstart and _colstart can remain 0, they don't actually do anything in thi
 I'm includeing the moddified files here too so you can replace them in the "Adafruit_ST7735_and_ST7789_Library"
 folder in your Arduino Libraries folder.  Please note that this is a modification of code originally 
 writen by Adafruit Industries.
+
+Also here's a super easy fix for if you are trying to do the same thing
+but in Circit Python, just add this when adding the display:
+display = ST7789(display_bus, width=280, height=240, rowstart=(20), rotation=90)
 
